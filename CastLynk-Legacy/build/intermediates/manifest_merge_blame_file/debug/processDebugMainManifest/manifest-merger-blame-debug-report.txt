@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.example.castlynk.legacy"
-4    android:versionCode="2"
-5    android:versionName="1.1" >
+4    android:versionCode="3"
+5    android:versionName="1.2" >
 6
 7    <uses-sdk
 7-->INJECTED
@@ -62,156 +62,155 @@
 32-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:17:9-41
 33        android:supportsRtl="true"
 33-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:18:9-35
-34        android:testOnly="true"
-35        android:theme="@style/Theme.CastLynk.Legacy" >
-35-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:19:9-53
-36        <service
-36-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:21:9-26:35
-37            android:name="com.example.castlynk.legacy.HostService"
-37-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:22:13-40
-38            android:enabled="true"
-38-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:23:13-35
-39            android:exported="false"
-39-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:24:13-37
-40            android:foregroundServiceType="mediaProjection" />
-40-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:25:13-60
-41        <service
-41-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:28:9-39:19
-42            android:name="com.example.castlynk.legacy.RemoteControlService"
-42-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:29:13-49
-43            android:exported="true"
-43-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:32:13-36
-44            android:label="CastLynk Remote Control"
-44-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:30:13-52
-45            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
-45-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:31:13-79
-46            <intent-filter>
-46-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:33:13-35:29
-47                <action android:name="android.accessibilityservice.AccessibilityService" />
-47-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:34:17-92
-47-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:34:25-89
-48            </intent-filter>
-49
-50            <meta-data
-50-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:36:13-38:72
-51                android:name="android.accessibilityservice"
-51-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:37:17-60
-52                android:resource="@xml/accessibility_service_config" />
-52-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:38:17-69
-53        </service>
-54        <service
-54-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:41:9-49:19
-55            android:name="com.example.castlynk.legacy.NotificationSyncService"
-55-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:42:13-52
-56            android:exported="true"
-56-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:45:13-36
-57            android:label="CastLynk Notification Sync"
-57-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:43:13-55
-58            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
-58-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:44:13-87
-59            <intent-filter>
-59-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:46:13-48:29
-60                <action android:name="android.service.notification.NotificationListenerService" />
-60-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:47:17-99
-60-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:47:25-96
-61            </intent-filter>
-62        </service>
-63        <service android:name="com.example.castlynk.legacy.FileTransferService" />
-63-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:51:9-56
-63-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:51:18-53
-64
-65        <activity
-65-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:53:9-60:20
-66            android:name="com.example.castlynk.legacy.MainActivity"
-66-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:54:13-41
-67            android:exported="true" >
-67-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:55:13-36
-68            <intent-filter>
-68-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:56:13-59:29
-69                <action android:name="android.intent.action.MAIN" />
-69-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:57:17-69
-69-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:57:25-66
-70
-71                <category android:name="android.intent.category.LAUNCHER" />
-71-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:58:17-77
-71-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:58:27-74
-72            </intent-filter>
-73        </activity>
-74        <activity android:name="com.example.castlynk.legacy.ClientActivity" />
-74-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:62:9-52
-74-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:62:19-49
-75        <activity android:name="com.example.castlynk.legacy.HostActivity" />
-75-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:63:9-50
-75-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:63:19-47
-76        <activity android:name="com.example.castlynk.legacy.MirrorActivity" />
-76-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:64:9-52
-76-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:64:19-49
-77
-78        <provider
-78-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-79            android:name="androidx.startup.InitializationProvider"
-79-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-80            android:authorities="com.example.castlynk.legacy.androidx-startup"
-80-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-81            android:exported="false" >
-81-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-82            <meta-data
-82-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-83                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-83-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-84                android:value="androidx.startup" />
-84-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-85            <meta-data
-85-->[androidx.lifecycle:lifecycle-process:2.6.1] D:\Android\Projects\caches\9.4.1\transforms\ac76cb9da85161f50b32b0a0e4fd8d0a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
-86                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-86-->[androidx.lifecycle:lifecycle-process:2.6.1] D:\Android\Projects\caches\9.4.1\transforms\ac76cb9da85161f50b32b0a0e4fd8d0a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
-87                android:value="androidx.startup" />
-87-->[androidx.lifecycle:lifecycle-process:2.6.1] D:\Android\Projects\caches\9.4.1\transforms\ac76cb9da85161f50b32b0a0e4fd8d0a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
-88            <meta-data
-88-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-89                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-89-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-90                android:value="androidx.startup" />
-90-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-91        </provider>
-92
-93        <receiver
-93-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-94            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-94-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-95            android:directBootAware="false"
-95-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-96            android:enabled="true"
-96-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-97            android:exported="true"
-97-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-98            android:permission="android.permission.DUMP" >
-98-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-99            <intent-filter>
-99-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-100                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-100-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-101            </intent-filter>
-102            <intent-filter>
-102-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-103                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-103-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-104            </intent-filter>
-105            <intent-filter>
-105-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-106                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-106-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-107            </intent-filter>
-108            <intent-filter>
-108-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-109                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-109-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-110            </intent-filter>
-111        </receiver>
-112    </application>
-113
-114</manifest>
+34        android:theme="@style/Theme.CastLynk.Legacy" >
+34-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:19:9-53
+35        <service
+35-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:21:9-26:35
+36            android:name="com.example.castlynk.legacy.HostService"
+36-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:22:13-40
+37            android:enabled="true"
+37-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:23:13-35
+38            android:exported="false"
+38-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:24:13-37
+39            android:foregroundServiceType="mediaProjection" />
+39-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:25:13-60
+40        <service
+40-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:28:9-39:19
+41            android:name="com.example.castlynk.legacy.RemoteControlService"
+41-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:29:13-49
+42            android:exported="true"
+42-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:32:13-36
+43            android:label="CastLynk Remote Control"
+43-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:30:13-52
+44            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+44-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:31:13-79
+45            <intent-filter>
+45-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:33:13-35:29
+46                <action android:name="android.accessibilityservice.AccessibilityService" />
+46-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:34:17-92
+46-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:34:25-89
+47            </intent-filter>
+48
+49            <meta-data
+49-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:36:13-38:72
+50                android:name="android.accessibilityservice"
+50-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:37:17-60
+51                android:resource="@xml/accessibility_service_config" />
+51-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:38:17-69
+52        </service>
+53        <service
+53-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:41:9-49:19
+54            android:name="com.example.castlynk.legacy.NotificationSyncService"
+54-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:42:13-52
+55            android:exported="true"
+55-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:45:13-36
+56            android:label="CastLynk Notification Sync"
+56-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:43:13-55
+57            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" >
+57-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:44:13-87
+58            <intent-filter>
+58-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:46:13-48:29
+59                <action android:name="android.service.notification.NotificationListenerService" />
+59-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:47:17-99
+59-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:47:25-96
+60            </intent-filter>
+61        </service>
+62        <service android:name="com.example.castlynk.legacy.FileTransferService" />
+62-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:51:9-56
+62-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:51:18-53
+63
+64        <activity
+64-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:53:9-60:20
+65            android:name="com.example.castlynk.legacy.MainActivity"
+65-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:54:13-41
+66            android:exported="true" >
+66-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:55:13-36
+67            <intent-filter>
+67-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:56:13-59:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:57:17-69
+68-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:57:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:58:17-77
+70-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:58:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity android:name="com.example.castlynk.legacy.ClientActivity" />
+73-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:62:9-52
+73-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:62:19-49
+74        <activity android:name="com.example.castlynk.legacy.HostActivity" />
+74-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:63:9-50
+74-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:63:19-47
+75        <activity android:name="com.example.castlynk.legacy.MirrorActivity" />
+75-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:64:9-52
+75-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:64:19-49
+76
+77        <provider
+77-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+78            android:name="androidx.startup.InitializationProvider"
+78-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+79            android:authorities="com.example.castlynk.legacy.androidx-startup"
+79-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+80            android:exported="false" >
+80-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+81            <meta-data
+81-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+82                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+82-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+83                android:value="androidx.startup" />
+83-->[androidx.emoji2:emoji2:1.2.0] D:\Android\Projects\caches\9.4.1\transforms\504bae65561091f15e561ab9bb03a05a\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+84            <meta-data
+84-->[androidx.lifecycle:lifecycle-process:2.6.1] D:\Android\Projects\caches\9.4.1\transforms\ac76cb9da85161f50b32b0a0e4fd8d0a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.6.1] D:\Android\Projects\caches\9.4.1\transforms\ac76cb9da85161f50b32b0a0e4fd8d0a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+86                android:value="androidx.startup" />
+86-->[androidx.lifecycle:lifecycle-process:2.6.1] D:\Android\Projects\caches\9.4.1\transforms\ac76cb9da85161f50b32b0a0e4fd8d0a\transformed\lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+89                android:value="androidx.startup" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+90        </provider>
+91
+92        <receiver
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+93            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+93-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+94            android:directBootAware="false"
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+95            android:enabled="true"
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+96            android:exported="true"
+96-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+97            android:permission="android.permission.DUMP" >
+97-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+99                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+99-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+102                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+105                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+108                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+108-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\Android\Projects\caches\9.4.1\transforms\82ed51e6e23dc0d85591f0223ebcac3e\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+109            </intent-filter>
+110        </receiver>
+111    </application>
+112
+113</manifest>

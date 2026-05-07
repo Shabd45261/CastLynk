@@ -1,0 +1,29 @@
+PROJECT MEMORY CORE - CastLynk
+
+COMPLETED TASKS:
+- UI Resource refinement (strings, drawables, layouts).
+- Permission configuration in Manifest.
+- HostService and MirrorActivity logic improvements.
+- Build system versioning implemented.
+- APK naming convention (apk-N.apk) enforced.
+- Documentation created (README.md, start.txt, close.txt).
+- App Icon update requested (Image provided).
+
+VERSION HISTORY:
+- 1.0 (Build 1): Initial Legacy setup.
+- 1.1 (Build 2): Resource updates and documentation.
+- 1.2 (Build 3): Version increment and build update.
+
+CURRENT APK:
+- CastLynk-Legacy-debug-3.apk
+
+BUILD HISTORY:
+- Build 1: Success
+- Build 2: Success
+- Build 3: Success
+
+APP VISION:
+Lightweight Android-to-Android screen mirroring and remote control with legacy support.
+
+GITHUB SYNC:
+Ready for remote link. (CLOSE command will trigger sync).

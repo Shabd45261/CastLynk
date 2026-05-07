@@ -1,11 +1,13 @@
 CLOSE INSTRUCTION: Whenever the user says "CLOSE", I (Gemini) must update everything into the GitHub repository.
 
 WORK DONE TODAY:
-1.  Resource Updates: Modified strings.xml, activity_host.xml, ic_client.xml, and bg_notification_card.xml to improve UI and descriptive text.
-2.  Service Logic: Refined HostService.java and MirrorActivity.java for better screen mirroring performance.
-3.  Permissions: Updated AndroidManifest.xml with essential permissions for Media Projection and Accessibility Services.
-4.  Version Control: Incremented versionCode to 2 and versionName to "1.1" in both :CastLynk-Legacy and :app modules.
-5.  Build & Deployment: Generated a new debug APK and renamed it to CastLynk-Legacy-debug-2.apk following the naming convention.
+1.  Resource Updates: Modified strings.xml, activity_host.xml, ic_client.xml, and bg_notification_card.xml.
+2.  Service Logic: Refined HostService.java and MirrorActivity.java.
+3.  Permissions: Updated AndroidManifest.xml for Media Projection and Accessibility.
+4.  Version Control: Incremented versionCode to 3 and versionName to "1.2".
+5.  Build & Deployment: Generated CastLynk-Legacy-debug-3.apk.
+6.  Icon Update: Received new app icon (CastLynk text logo).
+7.  Project Memory: Created instruction.txt for persistent AI memory.
 
 APP INSTRUCTIONS:
 - Host Device: Start the "Host" mode. Grant "Media Projection" permission to allow screen capture. Enable "Accessibility Service" (CastLynk Remote Control) for remote touch support.
