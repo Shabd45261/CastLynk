@@ -27,4 +27,4 @@ APP VISION:
 Lightweight Android-to-Android screen mirroring and remote control with legacy support.
 
 GITHUB SYNC:
-Ready for remote link. (CLOSE command will trigger sync).
+Pending remote URL. Local commits are ready for Build 3. (CLOSE command received).
