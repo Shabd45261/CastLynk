@@ -20,4 +20,4 @@ Target: Legacy support ensures older devices remain functional parts of the ecos
 
 APK NAMING INSTRUCTION:
 Update the APK name with the update count: (name of the apk-N).apk.
-Current: CastLynk-Legacy-debug-2.apk.
+Current: CastLynk-Legacy-debug-3.apk and CastLynk-debug-3.apk.
