@@ -27,4 +27,4 @@ APP VISION:
 Lightweight Android-to-Android screen mirroring and remote control with legacy support.
 
 GITHUB SYNC:
-Pending remote URL. Local commits are ready for Build 3. (CLOSE command received).
+Successfully synced to https://github.com/Shabd45261/CastLynk.git. Build 3 APK and documentation are now live. (CLOSE command completed).
