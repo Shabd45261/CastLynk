@@ -1,0 +1,16 @@
+<resources>
+    <style name="Theme.CastLynk.Legacy" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/neon_blue</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/neon_purple</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="CardView_Host">
+        <item name="android:background">@drawable/bg_card_host</item>
+    </style>
+
+    <style name="CardView_Client">
+        <item name="android:background">@drawable/bg_card_client</item>
+    </style>
+</resources>

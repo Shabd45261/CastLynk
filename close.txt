@@ -1,0 +1,21 @@
+CLOSE INSTRUCTION: Whenever the user says "CLOSE", I (Gemini) must update everything into the GitHub repository.
+
+WORK DONE TODAY:
+1.  Resource Updates: Modified strings.xml, activity_host.xml, ic_client.xml, and bg_notification_card.xml to improve UI and descriptive text.
+2.  Service Logic: Refined HostService.java and MirrorActivity.java for better screen mirroring performance.
+3.  Permissions: Updated AndroidManifest.xml with essential permissions for Media Projection and Accessibility Services.
+4.  Version Control: Incremented versionCode to 2 and versionName to "1.1" in both :CastLynk-Legacy and :app modules.
+5.  Build & Deployment: Generated a new debug APK and renamed it to CastLynk-Legacy-debug-2.apk following the naming convention.
+
+APP INSTRUCTIONS:
+- Host Device: Start the "Host" mode. Grant "Media Projection" permission to allow screen capture. Enable "Accessibility Service" (CastLynk Remote Control) for remote touch support.
+- Client Device: Start the "Client" mode. Use "Find & Connect" to discover the Host on the local network.
+- Features: Real-time screen mirroring, remote touch interaction, and notification synchronization.
+
+README / VISION:
+Vision: CastLynk is designed to be a lightweight and efficient tool for cross-device interaction. It bridges the gap between devices by allowing users to not only view but also control one Android device from another, which is highly beneficial for remote assistance, presentations, and multitasking.
+Target: Legacy support ensures older devices remain functional parts of the ecosystem.
+
+APK NAMING INSTRUCTION:
+Update the APK name with the update count: (name of the apk-N).apk.
+Current: CastLynk-Legacy-debug-2.apk.

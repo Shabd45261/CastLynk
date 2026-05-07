@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CastLynk Legacy</string>
+    <string name="screen_mirror_subtitle">SCREEN MIRROR &amp; REMOTE CONTROL</string>
+    <string name="host">Host</string>
+    <string name="client">Client</string>
+    <string name="start_casting">Start casting</string>
+    <string name="find_connect">Find &amp; connect</string>
+    <string name="live">Live</string>
+    <string name="idle">Idle</string>
+    <string name="local_network_active">Local Network Active</string>
+    <string name="change">Change</string>
+    <string name="notifications">Notifications</string>
+    <string name="clear_all">Clear All</string>
+    <string name="streamed_from_host">Streamed from your Host device</string>
+    <string name="remote_control_desc">Allows CastLynk to perform remote touch gestures.</string>
+</resources>

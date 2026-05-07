@@ -1,0 +1,9 @@
+START INSTRUCTION: Whenever the user says "START", I (Gemini) must read and understand everything in the project context to be ready for work.
+
+WHERE WE STARTED TODAY:
+Today we started by refining the CastLynk-Legacy application. The focus was on improving the "SCREEN MIRROR & REMOTE CONTROL" features. We began by modifying the UI resources (strings, drawables, layouts) and core logic in HostService and MirrorActivity.
+
+APK NAMING INSTRUCTION:
+Whenever an APK is updated, it must be renamed to include the update count in the format: (name of the apk-N).apk. For example, if it's the 4th update: CastLynk-Legacy-debug-4.apk.
+Current update count: 2.
+Current APK: CastLynk-Legacy-debug-2.apk.
