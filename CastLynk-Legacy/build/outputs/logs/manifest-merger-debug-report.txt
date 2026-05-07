@@ -117,7 +117,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] D:\Android\Projects\caches\
 	android:label
 		ADDED from D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:17:9-41
 	android:icon
-		ADDED from D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:16:9-41
+		ADDED from D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:16:9-42
 	android:allowBackup
 		ADDED from D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:15:9-35
 	android:theme

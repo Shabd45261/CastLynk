@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.castlynk.legacy.CastLynk-Legacy-mergeDebugResources-28:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+            "outputFile": "com.example.castlynk.legacy.CastLynk-Legacy-mergeDebugResources-1:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\9.4.1\\transforms\\de9bb452fdef2e2e04ca3e78e7a1ef9d\\transformed\\material-1.10.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
+                    "source": "D:\\Android\\Projects\\caches\\9.4.1\\transforms\\de9bb452fdef2e2e04ca3e78e7a1ef9d\\transformed\\material-1.10.0\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

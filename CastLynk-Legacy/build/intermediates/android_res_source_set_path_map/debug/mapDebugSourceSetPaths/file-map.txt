@@ -5,4 +5,4 @@ com.example.castlynk.legacy.CastLynk-Legacy-packageDebugResources-3 D:\Android\C
 com.example.castlynk.legacy.CastLynk-Legacy-debug-4 D:\Android\CastLynk\CastLynk-Legacy\build\intermediates\merged_res\debug\mergeDebugResources
 com.example.castlynk.legacy.CastLynk-Legacy-debug-5 D:\Android\CastLynk\CastLynk-Legacy\src\debug\res
 com.example.castlynk.legacy.CastLynk-Legacy-main-6 D:\Android\CastLynk\CastLynk-Legacy\src\main\res
-gradleHome-0 C:\Users\DELL\.gradle
+gradleHome-0 D:\Android\Projects

@@ -7,12 +7,13 @@ COMPLETED TASKS:
 - Build system versioning implemented.
 - APK naming convention (apk-N.apk) enforced.
 - Documentation created (README.md, start.txt, close.txt).
-- App Icon update requested (Image provided).
+- App Icon update completed (using playstore.png).
+- Build 4: Icon integration.
 
 VERSION HISTORY:
 - 1.0 (Build 1): Initial Legacy setup.
 - 1.1 (Build 2): Resource updates and documentation.
-- 1.2 (Build 3): Version increment and build update.
+- 1.2 (Build 3): Version increment and icon integration.
 
 CURRENT APK:
 - CastLynk-Legacy-debug-3.apk

@@ -56,8 +56,8 @@
 29        android:debuggable="true"
 30        android:extractNativeLibs="true"
 30-->INJECTED
-31        android:icon="@drawable/ic_host"
-31-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:16:9-41
+31        android:icon="@drawable/app_icon"
+31-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:16:9-42
 32        android:label="@string/app_name"
 32-->D:\Android\CastLynk\CastLynk-Legacy\src\main\AndroidManifest.xml:17:9-41
 33        android:supportsRtl="true"

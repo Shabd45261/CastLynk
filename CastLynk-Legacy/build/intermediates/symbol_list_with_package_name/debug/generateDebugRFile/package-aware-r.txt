@@ -10,6 +10,7 @@ color neon_purple
 color text_primary
 color text_secondary
 color white
+drawable app_icon
 drawable bg_badge_live
 drawable bg_card_client
 drawable bg_card_host
