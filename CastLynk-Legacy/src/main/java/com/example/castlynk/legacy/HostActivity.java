@@ -1,5 +1,6 @@
 package com.example.castlynk.legacy;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +16,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,8 +29,7 @@ import java.util.List;
 public class HostActivity extends AppCompatActivity {
 
     private static final String TAG = "HostActivity";
-    private static final String CLIENT_SERVICE_TYPE = "_castlynk_client._tcp.";
-    private static final int REQUEST_MEDIA_PROJECTION = 2001;
+    private static final String CLIENT_SERVICE_TYPE = "_castlynk_client._tcp";
 
     private NsdManager nsdManager;
     private NsdManager.DiscoveryListener discoveryListener;
@@ -39,6 +41,18 @@ public class HostActivity extends AppCompatActivity {
     private ProgressBar pbDiscovery;
     private ListView lvClients;
     private NsdServiceInfo selectedClient;
+    private boolean isDiscoveryStarted = false;
+
+    private final ActivityResultLauncher<Intent> projectionLauncher = 
+        registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+            if (result.getResultCode() == Activity.RESULT_OK && result.getData() != null) {
+                Log.d(TAG, "MediaProjection permission granted");
+                startMirroring(result.getResultCode(), result.getData());
+            } else {
+                Log.e(TAG, "MediaProjection permission denied or cancelled");
+                Toast.makeText(this, "Permission denied. Screen capture cannot start.", Toast.LENGTH_LONG).show();
+            }
+        });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +65,9 @@ public class HostActivity extends AppCompatActivity {
 
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, clientNames);
         lvClients.setAdapter(adapter);
+
+        String localIp = NetworkHelper.getLocalIpAddress(this);
+        tvStatus.setText("Host IP: " + localIp + "\nScanning for waiting clients...");
 
         nsdManager = (NsdManager) getSystemService(Context.NSD_SERVICE);
         initializeDiscoveryListener();
@@ -65,28 +82,40 @@ public class HostActivity extends AppCompatActivity {
         discoveryListener = new NsdManager.DiscoveryListener() {
             @Override
             public void onStartDiscoveryFailed(String serviceType, int errorCode) {
-                nsdManager.stopServiceDiscovery(this);
+                Log.e(TAG, "Discovery failed: " + errorCode);
+                isDiscoveryStarted = false;
             }
 
             @Override
             public void onStopDiscoveryFailed(String serviceType, int errorCode) {
-                nsdManager.stopServiceDiscovery(this);
+                Log.e(TAG, "Stop Discovery failed: " + errorCode);
             }
 
             @Override
             public void onDiscoveryStarted(String serviceType) {
-                Log.d(TAG, "Client discovery started");
+                Log.d(TAG, "Discovery started");
+                isDiscoveryStarted = true;
             }
 
             @Override
             public void onServiceFound(NsdServiceInfo serviceInfo) {
-                if (serviceInfo.getServiceType().equals(CLIENT_SERVICE_TYPE)) {
+                Log.d(TAG, "Service found: " + serviceInfo.getServiceName() + " (" + serviceInfo.getServiceType() + ")");
+                if (serviceInfo.getServiceType().contains("castlynk_client")) {
                     runOnUiThread(() -> {
-                        discoveredClients.add(serviceInfo);
-                        clientNames.add(serviceInfo.getServiceName());
-                        adapter.notifyDataSetChanged();
-                        pbDiscovery.setVisibility(View.GONE);
-                        tvStatus.setText("Found " + discoveredClients.size() + " waiting clients");
+                        boolean exists = false;
+                        for (NsdServiceInfo n : discoveredClients) {
+                            if (n.getServiceName().equals(serviceInfo.getServiceName())) {
+                                exists = true;
+                                break;
+                            }
+                        }
+                        if (!exists) {
+                            discoveredClients.add(serviceInfo);
+                            clientNames.add(serviceInfo.getServiceName());
+                            adapter.notifyDataSetChanged();
+                            pbDiscovery.setVisibility(View.GONE);
+                            tvStatus.setText("Found " + discoveredClients.size() + " potential clients");
+                        }
                     });
                 }
             }
@@ -94,24 +123,28 @@ public class HostActivity extends AppCompatActivity {
             @Override
             public void onServiceLost(NsdServiceInfo serviceInfo) {
                 runOnUiThread(() -> {
-                    int index = clientNames.indexOf(serviceInfo.getServiceName());
-                    if (index != -1) {
-                        discoveredClients.remove(index);
-                        clientNames.remove(index);
-                        adapter.notifyDataSetChanged();
+                    for (int i = 0; i < discoveredClients.size(); i++) {
+                        if (discoveredClients.get(i).getServiceName().equals(serviceInfo.getServiceName())) {
+                            discoveredClients.remove(i);
+                            clientNames.remove(i);
+                            adapter.notifyDataSetChanged();
+                            break;
+                        }
                     }
                 });
             }
 
             @Override
-            public void onDiscoveryStopped(String serviceType) {}
+            public void onDiscoveryStopped(String serviceType) {
+                isDiscoveryStarted = false;
+            }
         };
     }
 
     private void showPairingDialog(NsdServiceInfo client) {
         new AlertDialog.Builder(this)
                 .setTitle("Pairing Request")
-                .setMessage("Do you want to pair with " + client.getServiceName() + "?")
+                .setMessage("Pair with " + client.getServiceName() + "?")
                 .setPositiveButton("Pair & Start", (dialog, which) -> {
                     requestMirroringPermission();
                 })
@@ -122,15 +155,10 @@ public class HostActivity extends AppCompatActivity {
     private void requestMirroringPermission() {
         MediaProjectionManager mpManager = (MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE);
         if (mpManager != null) {
-            startActivityForResult(mpManager.createScreenCaptureIntent(), REQUEST_MEDIA_PROJECTION);
-        }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_MEDIA_PROJECTION && resultCode == RESULT_OK && data != null) {
-            startMirroring(resultCode, data);
+            Log.d(TAG, "Launching MediaProjection permission intent");
+            projectionLauncher.launch(mpManager.createScreenCaptureIntent());
+        } else {
+            Log.e(TAG, "MediaProjectionManager is null");
         }
     }
 
@@ -145,29 +173,26 @@ public class HostActivity extends AppCompatActivity {
             public void onServiceResolved(NsdServiceInfo serviceInfo) {
                 String clientIp = serviceInfo.getHost().getHostAddress();
                 int clientPort = serviceInfo.getPort();
+                Log.d(TAG, "Resolved client: " + clientIp + ":" + clientPort);
                 
                 new Thread(() -> {
                     try (Socket socket = new Socket(clientIp, clientPort);
                          java.io.DataOutputStream out = new java.io.DataOutputStream(socket.getOutputStream())) {
                         
-                        // Send Host name to Client for pairing request
                         out.writeUTF(android.os.Build.MODEL);
                         out.flush();
+                        Log.d(TAG, "Handshake sent to client");
                         
                         runOnUiThread(() -> {
-                            Toast.makeText(HostActivity.this, "Pairing request sent to " + clientIp, Toast.LENGTH_SHORT).show();
-                            
                             Intent serviceIntent = new Intent(HostActivity.this, HostService.class);
                             serviceIntent.putExtra("resultCode", resultCode);
                             serviceIntent.putExtra("data", data);
-                            serviceIntent.putExtra("clientIp", clientIp);
                             startService(serviceIntent);
-                            
                             finish();
                         });
                     } catch (IOException e) {
-                        Log.e(TAG, "Failed to connect to client for pairing", e);
-                        runOnUiThread(() -> Toast.makeText(HostActivity.this, "Connection failed", Toast.LENGTH_SHORT).show());
+                        Log.e(TAG, "Failed to connect to client for handshake", e);
+                        runOnUiThread(() -> Toast.makeText(HostActivity.this, "Handshake failed: " + e.getMessage(), Toast.LENGTH_SHORT).show());
                     }
                 }).start();
             }
@@ -177,13 +202,15 @@ public class HostActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        nsdManager.discoverServices(CLIENT_SERVICE_TYPE, NsdManager.PROTOCOL_DNS_SD, discoveryListener);
+        if (nsdManager != null && !isDiscoveryStarted) {
+            nsdManager.discoverServices(CLIENT_SERVICE_TYPE, NsdManager.PROTOCOL_DNS_SD, discoveryListener);
+        }
     }
 
     @Override
     protected void onPause() {
-        if (nsdManager != null) {
-            nsdManager.stopServiceDiscovery(discoveryListener);
+        if (nsdManager != null && isDiscoveryStarted) {
+            try { nsdManager.stopServiceDiscovery(discoveryListener); } catch (Exception ignored) {}
         }
         super.onPause();
     }

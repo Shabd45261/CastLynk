@@ -14,8 +14,8 @@ android {
         applicationId = "com.example.castlynk"
         minSdk = 24
         targetSdk = 36
-        versionCode = 4
-        versionName = "1.3"
+        versionCode = 12
+        versionName = "2.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

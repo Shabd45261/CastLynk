@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="MESSAGES"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
@@ -49,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Alex Rivers"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="italic|bold" />
 

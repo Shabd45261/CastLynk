@@ -1,13 +1,14 @@
 CLOSE INSTRUCTION: Whenever the user says "CLOSE", I (Gemini) must update everything into the GitHub repository.
 
 WORK DONE TODAY:
-1.  Resource Updates: Modified strings.xml, activity_host.xml, ic_client.xml, and bg_notification_card.xml.
-2.  Service Logic: Refined HostService.java and MirrorActivity.java.
-3.  Permissions: Updated AndroidManifest.xml for Media Projection and Accessibility.
-4.  Version Control: Incremented versionCode to 3 and versionName to "1.2".
-5.  Build & Deployment: Generated CastLynk-Legacy-debug-3.apk.
-6.  Icon Update: Received new app icon (CastLynk text logo).
-7.  Project Memory: Created instruction.txt for persistent AI memory.
+1.  Lifecycle Overhaul: Fixed the Host startup sequence to call startForeground() immediately, satisfying Android 14+ security requirements for MediaProjection.
+2.  Modern API Integration: Replaced deprecated startActivityForResult with ActivityResultLauncher in HostActivity for better reliability on Android 16.
+3.  Legacy Optimization: Configured MediaCodec to use AVC Baseline profile and safe resolution normalization (multiples of 16), ensuring compatibility with Android 5.0 decoders.
+4.  Connectivity: Implemented Manual IP Connection and added local IP display on the Host screen to bypass NSD discovery failures.
+5.  Stability: Added connection retry logic and robust try-catch blocks to prevent ANRs and crashes during handshake.
+6.  UI/UX: Complete Dark Mode overhaul with a new Settings Panel and persistent preferences.
+7.  Version Control: Incremented to versionCode 12 (Version 2.1).
+8.  Documentation: Updated README.md, instruction.txt, start.txt, and close.txt with full Build 12 history.
 
 APP INSTRUCTIONS:
 - Host Device: Start the "Host" mode. Grant "Media Projection" permission to allow screen capture. Enable "Accessibility Service" (CastLynk Remote Control) for remote touch support.
@@ -20,4 +21,4 @@ Target: Legacy support ensures older devices remain functional parts of the ecos
 
 APK NAMING INSTRUCTION:
 Update the APK name with the update count: (name of the apk-N).apk.
-Current: CastLynk-Legacy-debug-4.apk and CastLynk-debug-4.apk.
+Current: CastLynk-Legacy-debug-12.apk and CastLynk-debug-12.apk.

@@ -1,31 +1,27 @@
 [
     {
-        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_mirror.xml.flat",
-        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_mirror.xml"
-    },
-    {
-        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_bg_badge_live.xml.flat",
-        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\bg_badge_live.xml"
-    },
-    {
-        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_host.xml.flat",
-        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_host.xml"
-    },
-    {
-        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_bg_card_client.xml.flat",
-        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\bg_card_client.xml"
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_ic_sun.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/ic_sun.xml"
     },
     {
         "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\xml_accessibility_service_config.xml.flat",
         "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\xml\\accessibility_service_config.xml"
     },
     {
-        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_ic_client.xml.flat",
-        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\ic_client.xml"
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/layout_activity_host.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/layout/activity_host.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_bg_status_bar_dark.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/bg_status_bar_dark.xml"
     },
     {
         "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_bg_card_host.xml.flat",
         "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\bg_card_host.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_ic_back.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/ic_back.xml"
     },
     {
         "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_item_notification.xml.flat",
@@ -36,16 +32,64 @@
         "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\bg_notification_card.xml"
     },
     {
-        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_client.xml.flat",
-        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_client.xml"
-    },
-    {
         "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_main.xml.flat",
         "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_app_icon.png.flat",
-        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/app_icon.png"
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/layout_activity_client.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/layout/activity_client.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_bg_spinner_mock.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/bg_spinner_mock.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_ic_settings.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_bg_badge_live.xml.flat",
+        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\bg_badge_live.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_mirror.xml.flat",
+        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_mirror.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_host.xml.flat",
+        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_host.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_bg_card_client.xml.flat",
+        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\bg_card_client.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_ic_moon.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/ic_moon.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_ic_client.xml.flat",
+        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\ic_client.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_bg_notification_card.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/bg_notification_card.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/layout_item_notification.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/layout/item_notification.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/layout_activity_settings.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\layout_activity_client.xml.flat",
+        "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\layout\\activity_client.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/layout_activity_main.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/layout/activity_main.xml"
     },
     {
         "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_bg_status_bar.xml.flat",
@@ -58,5 +102,9 @@
     {
         "merged": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-debug-3:\\drawable_ic_host.xml.flat",
         "source": "D:\\Android\\Projects\\daemon\\9.4.1\\com.example.castlynk.legacy.CastLynk-Legacy-main-5:\\drawable\\ic_host.xml"
+    },
+    {
+        "merged": "com.example.castlynk.legacy.CastLynk-Legacy-debug-3:/drawable_bg_protocol_active.xml.flat",
+        "source": "com.example.castlynk.legacy.CastLynk-Legacy-main-5:/drawable/bg_protocol_active.xml"
     }
 ]

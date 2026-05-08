@@ -26,7 +26,7 @@ To provide a lightweight, low-latency solution for Android-to-Android interactio
 
 ## Update Convention
 APKs are named following the pattern: `(name of the apk-N).apk` where `N` is the update count.
-Current Version: 1.3 (Build 4)
+Current Version: 1.6 (Build 7)
 Latest APKs: 
-- [Legacy Version (Build 4)](builds/CastLynk-Legacy-debug-4.apk)
-- [Modern Version (Build 4)](builds/CastLynk-debug-4.apk)
+- [Legacy Version (Build 7)](builds/CastLynk-Legacy-debug-7.apk)
+- [Modern Version (Build 7)](builds/CastLynk-debug-7.apk)

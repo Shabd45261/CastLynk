@@ -4,11 +4,15 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray_light">#F5F5F5</color>
     <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#121212</color>
+    <color name="gray_card">#1E1E1E</color>
     <color name="neon_blue">#00E5FF</color>
     <color name="neon_purple">#D500F9</color>
     <color name="neon_green">#00E676</color>
     <color name="card_host_bg">#1A1A1A</color>
     <color name="card_client_bg">#F0F0F0</color>
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#9E9E9E</color>
+    <color name="divider_color">#333333</color>
+    <color name="red_reset">#FF5252</color>
 </resources>

@@ -13,4 +13,34 @@
     <string name="clear_all">Clear All</string>
     <string name="streamed_from_host">Streamed from your Host device</string>
     <string name="remote_control_desc">Allows CastLynk to perform remote touch gestures.</string>
+
+    <string name="manual_connect">Manual Connect</string>
+    <string name="enter_host_ip">Enter Host IP Address</string>
+    <string name="connect">Connect</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="connection_and_quality">Connection and Quality</string>
+    <string name="stream_resolution">Stream Resolution</string>
+    <string name="stream_resolution_desc">Choose between Auto, 480p, 720p, or 1080p. Higher resolution looks better but requires more bandwidth.</string>
+    <string name="frame_rate">Frame Rate (FPS)</string>
+    <string name="frame_rate_desc">Toggle between 30 FPS (battery saving) and 60 FPS (smooth gaming/control).</string>
+    <string name="bitrate_control">Bitrate Control</string>
+    <string name="bitrate_control_desc">Auto-adjust based on network or manual slider (e.g. 2 Mbps to 20 Mbps).</string>
+    <string name="latency_mode">Latency Mode</string>
+    <string name="latency_mode_desc">Choose Real-time (Low Latency) for device control, Balanced for general sharing, Cinema (Buffered) for smooth video.</string>
+    <string name="audio_settings">Audio Settings</string>
+    <string name="audio_source">Audio Source</string>
+    <string name="audio_source_desc">Choose between Internal Audio (System sounds), Microphone, or Both.</string>
+    <string name="advanced_system">Advanced (System)</string>
+    <string name="hardware_acceleration">Hardware Acceleration</string>
+    <string name="hardware_acceleration_desc">Toggle GPU encoding (better performance vs. battery).</string>
+    <string name="background_activity">Background Activity</string>
+    <string name="background_activity_desc">Shortcut to Android settings to \"Ignore Battery Optimization\" (crucial so Android doesn\'t kill the app).</string>
+    <string name="network_protocol">Network Protocol</string>
+    <string name="network_protocol_desc">Choose between TCP (Stable) and UDP (Faster, but potential glitches).</string>
+    <string name="app_theme">App Theme</string>
+    <string name="reset_settings">Reset Settings</string>
+    <string name="reset_all">RESET ALL</string>
 </resources>

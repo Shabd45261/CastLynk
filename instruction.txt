@@ -15,16 +15,32 @@ VERSION HISTORY:
 - 1.1 (Build 2): Resource updates and documentation.
 - 1.2 (Build 3): Version increment and icon integration.
 - 1.3 (Build 4): New minimalist icon everywhere.
+- 1.4 (Build 5): Fixed strings.xml syntax and implemented Screen Resolution Synchronization.
+- 1.5 (Build 6): Updated app icon with the new circular "K-L" minimalist design.
+- 1.6 (Build 7): Implemented Settings Panel, Dark Mode UI, and fixed Host crash & Pairing issues.
+- 1.7 (Build 8): Fixed Android 16 discovery permissions and Android 5 black screen issues.
+- 1.8 (Build 9): Implemented connection retry mechanism to fix ECONNREFUSED race condition.
+- 1.9 (Build 10): Fixed MediaCodec resolution crashes (multiple of 16 normalization).
+- 2.0 (Build 11): Implemented Manual IP Connection.
+- 2.1 (Build 12): Overhauled Host lifecycle for Android 14+, fixed permission popup suppression, implemented Baseline AVC profile, and added Local IP display for manual connection.
 
 CURRENT APK:
-- CastLynk-Legacy-debug-4.apk
-- CastLynk-debug-4.apk
+- CastLynk-Legacy-debug-12.apk
+- CastLynk-debug-12.apk
 
 BUILD HISTORY:
 - Build 1: Success
 - Build 2: Success
 - Build 3: Success
 - Build 4: Success
+- Build 5: Success
+- Build 6: Success
+- Build 7: Success
+- Build 8: Success
+- Build 9: Success
+- Build 10: Success
+- Build 11: Success
+- Build 12: Success
 
 APP VISION:
 Lightweight Android-to-Android screen mirroring and remote control with legacy support.

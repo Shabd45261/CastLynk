@@ -34,6 +34,19 @@ public class NetworkHelper {
         return "Not Connected";
     }
 
+    public static String getLocalIpAddress(Context context) {
+        WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        if (wifiManager != null) {
+            int ipAddress = wifiManager.getConnectionInfo().getIpAddress();
+            return String.format("%d.%d.%d.%d",
+                    (ipAddress & 0xff),
+                    (ipAddress >> 8 & 0xff),
+                    (ipAddress >> 16 & 0xff),
+                    (ipAddress >> 24 & 0xff));
+        }
+        return "Unknown IP";
+    }
+
     public static String getSignalStrength(Context context) {
         WifiManager wifiManager = (WifiManager) context.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if (wifiManager != null && wifiManager.isWifiEnabled()) {
