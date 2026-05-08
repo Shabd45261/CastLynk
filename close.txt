@@ -8,13 +8,6 @@ WORK DONE TODAY:
 5.  Build & Deployment: Generated CastLynk-Legacy-debug-3.apk.
 6.  Icon Update: Received new app icon (CastLynk text logo).
 7.  Project Memory: Created instruction.txt for persistent AI memory.
-8.  Website Launch: Created a high-end, responsive landing page in /website folder.
-
-WEBSITE SYNC INSTRUCTION:
-Whenever you say "CLOSE", I must:
-- Ensure index.html download links point to the latest master branch APKs.
-- Update the version text on the website to match build.gradle.
-- Push all website changes along with the source code.
 
 APP INSTRUCTIONS:
 - Host Device: Start the "Host" mode. Grant "Media Projection" permission to allow screen capture. Enable "Accessibility Service" (CastLynk Remote Control) for remote touch support.
@@ -27,4 +20,4 @@ Target: Legacy support ensures older devices remain functional parts of the ecos
 
 APK NAMING INSTRUCTION:
 Update the APK name with the update count: (name of the apk-N).apk.
-Current: CastLynk-Legacy-debug-3.apk and CastLynk-debug-3.apk.
+Current: CastLynk-Legacy-debug-4.apk and CastLynk-debug-4.apk.

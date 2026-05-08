@@ -8,7 +8,7 @@ COMPLETED TASKS:
 - APK naming convention (apk-N.apk) enforced.
 - Documentation created (README.md, start.txt, close.txt).
 - App Icon update completed (using latest minimalist circular design).
-- Build 5: New Icon integration and website update.
+- Build 5: New Icon integration.
 
 VERSION HISTORY:
 - 1.0 (Build 1): Initial Legacy setup.
