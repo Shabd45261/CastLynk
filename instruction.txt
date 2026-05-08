@@ -7,26 +7,24 @@ COMPLETED TASKS:
 - Build system versioning implemented.
 - APK naming convention (apk-N.apk) enforced.
 - Documentation created (README.md, start.txt, close.txt).
-- App Icon update completed (using playstore.png).
-- Build 4: Icon integration.
-- Website: Responsive Cyberpunk landing page created.
-
-WEBSITE MANAGEMENT:
-- Folder: /website
-- Sync: Automatically update download buttons and version text in index.html during every build/release cycle.
+- App Icon update completed (using latest minimalist circular design).
+- Build 5: New Icon integration and website update.
 
 VERSION HISTORY:
 - 1.0 (Build 1): Initial Legacy setup.
 - 1.1 (Build 2): Resource updates and documentation.
 - 1.2 (Build 3): Version increment and icon integration.
+- 1.3 (Build 4): New minimalist icon everywhere.
 
 CURRENT APK:
-- CastLynk-Legacy-debug-3.apk
+- CastLynk-Legacy-debug-4.apk
+- CastLynk-debug-4.apk
 
 BUILD HISTORY:
 - Build 1: Success
 - Build 2: Success
 - Build 3: Success
+- Build 4: Success
 
 APP VISION:
 Lightweight Android-to-Android screen mirroring and remote control with legacy support.
