@@ -9,6 +9,11 @@ COMPLETED TASKS:
 - Documentation created (README.md, start.txt, close.txt).
 - App Icon update completed (using playstore.png).
 - Build 4: Icon integration.
+- Website: Responsive Cyberpunk landing page created.
+
+WEBSITE MANAGEMENT:
+- Folder: /website
+- Sync: Automatically update download buttons and version text in index.html during every build/release cycle.
 
 VERSION HISTORY:
 - 1.0 (Build 1): Initial Legacy setup.

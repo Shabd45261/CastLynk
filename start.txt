@@ -5,5 +5,9 @@ Today we started by refining the CastLynk-Legacy application. The focus was on i
 
 APK NAMING INSTRUCTION:
 Whenever an APK is updated, it must be renamed to include the update count in the format: (name of the apk-N).apk. For example, if it's the 4th update: CastLynk-Legacy-debug-4.apk.
-Current update count: 2.
-Current APK: CastLynk-Legacy-debug-2.apk.
+CURRENT APK:
+- CastLynk-Legacy-debug-3.apk
+- CastLynk-debug-3.apk
+
+WEBSITE SYNC:
+Whenever you say START, verify the website/index.html reflects the latest build numbers and download links for both apps.
